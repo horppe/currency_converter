@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <!--css/js files are also supported, you can
+       refer them using relative path.
+       Save all files first, including html file
+       to use this feature. -->
+
+      <meta name="viewport" content="width=device-width" />
+    <title>Currency Converter</title>
+    <link rel=stylesheet href=https://horppe.github.io/currency_converter/styles/style.css />
+  </head>
+  <body>
+
+	  <div class=container >
+        <div class=header>
+         <div id=currency-text >
+           Currency
+         </div>
+         <div id=converter-text >
+           Converter
+         </div>
+		   </div>
+
+		   <div class=from>
+		        <label name=Convert for=fromCurrency >Convert</label>
+	          <select id=fromCurrency name=Currency >
+		               <option selected value=USD>USD</option>
+			             <option value=NGN>NGN</option>
+			             <option value=PHP>PHP</option>
+		         </select>
+		    </div>
+
+        <div class=to>
+			       <label name=To for=toCurrency >To</label>
+			       <select id=toCurrency name=Currency>
+				           <option selected value=NGN>NGN</option>
+				           <option value=PHP>PHP</option>
+				           <option value=USD>USD</option>
+        		 </select>
+		    </div>
+		<!-- <div class=value>
+			<label name=To for=toCurrency >To</label>
+			<input type="text" id=valueNumber value="">
+		</div> -->
+
+        <div class="amount">
+          <input id="amount-input" type="number" placeholder="Enter amount..." />
+        </div>
+
+    		<div id=result>
+    			<!-- Change the innerHtml property of this result element -->
+
+    		</div>
+
+		    <button type=submit id=convertBtn>Convert</button>
+	    </div>
+    </body>
+<script src=https://horppe.github.io/currency_converter/index.js ></script>
+</html>
