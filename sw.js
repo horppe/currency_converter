@@ -1,4 +1,4 @@
-const cacheName = "converter-v1";
+const cacheName = "converter-v1";    
 const dependencies = [
   "/currency_converter/",
   "/currency_converter/index.html",
@@ -12,7 +12,7 @@ self.addEventListener('install', event => {
   console.log("installing...");
   event.waitUntil(
     caches.open(cacheName).then(cache => {
-      return cache.addAll(dependencies); 
+      return cache.addAll(dependencies);
     })
   );
 })
