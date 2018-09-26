@@ -1,4 +1,4 @@
-const cacheName = "converter-v1";    
+const cacheName = "converter-v2";    
 const dependencies = [
   "/currency_converter/",
   "/currency_converter/index.html",
